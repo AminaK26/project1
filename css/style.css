@@ -2,7 +2,7 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   padding: 20px;
-  background: linear-gradient(to right, #2e8b57, #1e90ff); /* Blue and green gradient background */
+  background: linear-gradient(to right, #2e8b57, #1e90ff); 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,7 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  border: 2px solid #4CAF50; /* Border color for form section */
+  border: 2px solid #4CAF50;
 }
 
 h1 {
@@ -99,10 +99,10 @@ button:hover {
 /* Second Media Query */
 @media only screen and (min-width: 1024px) {
   .form-section {
-    max-width: 800px; /* Increase max-width for larger screens */
+    max-width: 800px; 
   }
 
   h1 {
-    font-size: 2em; /* Increase heading size for larger screens */
+    font-size: 2em; 
   }
 }
