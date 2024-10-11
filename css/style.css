@@ -2,12 +2,22 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   padding: 20px;
-  background: linear-gradient(to right, #2e8b57, #1e90ff); 
+  background: linear-gradient(to right, #2e8b57, #1e90ff);
   display: flex;
+  flex-direction: column; 
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2.5em; 
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif; 
 }
 
 .form-section {
@@ -17,14 +27,7 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  border: 2px solid #4CAF50;
-}
-
-h1 {
-  text-align: center;
-  color: #333;
-  margin-bottom: 20px;
-  font-size: 1.5em;
+  border: 2px solid #4CAF50; 
 }
 
 .form-group {
@@ -72,6 +75,14 @@ button:hover {
   transform: scale(1.05); 
 }
 
+/* Footer styling */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9em; 
+  color: #555; 
+}
+
 /* First Media Query */
 @media only screen and (min-width: 768px) {
   .form-section {
@@ -103,6 +114,6 @@ button:hover {
   }
 
   h1 {
-    font-size: 2em; 
+    font-size: 3em; 
   }
 }
