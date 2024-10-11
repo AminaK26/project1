@@ -1,13 +1,17 @@
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(to bottom, #2e8b57, #1e90ff);
-  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+  background: linear-gradient(to right, #2e8b57, #1e90ff); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   margin: 0;
-  padding: 0;
 }
 
 h1 {
-  color: #2196f3;
+  color: #2196f3; 
   text-align: center;
 }
 
@@ -34,7 +38,7 @@ input {
 }
 
 button {
-  background-color: #4caf50;
+  background-color: #4caf50; 
   color: white;
   padding: 10px;
   border: none;
@@ -43,7 +47,7 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #45a049; 
 }
 
 /* Media Queries */
