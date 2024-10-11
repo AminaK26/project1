@@ -2,7 +2,7 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   padding: 20px;
-  background: linear-gradient(to right, #2e8b57, #1e90ff); 
+  background: linear-gradient(to right, #2e8b57, #1e90ff); /* Blue and green gradient background */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,55 +10,99 @@ body {
   margin: 0;
 }
 
-h1 {
-  color: #2196f3; 
-  text-align: center;
+.form-section {
+  max-width: 90%;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border: 2px solid #4CAF50; /* Border color for form section */
 }
 
-form {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.9); 
-  border-radius: 8px; 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+.form-group {
+  margin-bottom: 20px;
 }
 
 label {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #555;
 }
 
-input {
+input, select, textarea {
   width: 100%;
-  padding: 8px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc; 
-  border-radius: 4px; 
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: #f9f9f9; 
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #4CAF50;
+  outline: none;
+  background-color: #eafaf0; 
 }
 
 button {
-  background-color: #4caf50; 
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
   color: white;
-  padding: 10px;
   border: none;
+  border-radius: 4px;
+  font-size: 16px;
   cursor: pointer;
-  border-radius: 4px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 button:hover {
-  background-color: #45a049; 
+  background-color: #45a049;
+  transform: scale(1.05); 
 }
 
-/* Media Queries */
-@media (min-width: 600px) {
-  form {
+/* First Media Query */
+@media only screen and (min-width: 768px) {
+  .form-section {
     max-width: 600px;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .form-group > label {
+    margin-bottom: 8px;
+  }
+
+  .form-group > input,
+  .form-group > select,
+  .form-group > textarea {
+    flex: 1;
+    margin-right: 20px;
   }
 }
 
-@media (min-width: 900px) {
-  form {
-    max-width: 800px;
+/* Second Media Query */
+@media only screen and (min-width: 1024px) {
+  .form-section {
+    max-width: 800px; /* Increase max-width for larger screens */
+  }
+
+  h1 {
+    font-size: 2em; /* Increase heading size for larger screens */
   }
 }
